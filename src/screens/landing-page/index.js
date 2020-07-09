@@ -44,7 +44,7 @@ class LandingPage extends PureComponent {
                 </Navbar>
                 <div>
                     <h3 className="heading">Exams</h3>
-                    <Carousel showArrows={true} showIndicators={false} >
+                    <Carousel showArrows={true} showIndicators={false} showStatus={false} >
                         
 
                             {
@@ -72,7 +72,7 @@ class LandingPage extends PureComponent {
                 </div>
                 <div>
                     <h3 className="heading">Streams</h3>
-                    <Carousel showArrows={true} dedog>
+                    <Carousel showArrows={true} showIndicators={false} showStatus={false}>
                         
 
                             {
