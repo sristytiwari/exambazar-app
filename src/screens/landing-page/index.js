@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 class LandingPage extends PureComponent {
     constructor(props) {
@@ -86,7 +87,8 @@ class LandingPage extends PureComponent {
                                                 <Card.Text>
                                                     Rank - {item.rank}
                                                 </Card.Text>
-                                                <Button variant="primary">see example question</Button>
+                                                <Link to="/question/:id"><Button variant="primary">see example question</Button></Link>
+                                                
                                             </Card.Body>
                                         </Card>
 
