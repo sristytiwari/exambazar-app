@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import './styles.css';
 
 class LandingPage extends PureComponent {
     constructor(props) {
@@ -42,15 +43,15 @@ class LandingPage extends PureComponent {
 
                 </Navbar>
                 <div>
-                    <h3>Exams</h3>
-                    <Carousel showArrows={true} dedo>
+                    <h3 className="heading">Exams</h3>
+                    <Carousel showArrows={true} showIndicators={false} >
                         
 
                             {
                                 this.state.exams.map((item, index) => {
                                     return (
-                                        <Card style={{ width: '18rem' }}>
-                                            <Card.Img variant="top" src={item.logo} />
+                                        <Card style={{ width: '18rem', margin: '20px' }}>
+                                            <Card.Img variant="top" src={item.logo} className="card-image" />
                                             <Card.Body>
                                                 <Card.Title>{item.name}</Card.Title>
                                                 <Card.Text>
@@ -70,7 +71,7 @@ class LandingPage extends PureComponent {
 
                 </div>
                 <div>
-                    <h3>Streams</h3>
+                    <h3 className="heading">Streams</h3>
                     <Carousel showArrows={true} dedog>
                         
 
@@ -78,8 +79,8 @@ class LandingPage extends PureComponent {
                                 this.state.streams.map((item, index) => {
                                     return (
 
-                                        <Card style={{ width: '18rem' }}>
-                                            <Card.Img variant="top" src={item.logo.black} />
+                                        <Card style={{ width: '18rem', margin: '20px' }}>
+                                            <Card.Img variant="top" src={item.logo.black} className="card-image"  />
                                             <Card.Body>
                                                 <Card.Title>{item.name}</Card.Title>
                                                 <Card.Text>

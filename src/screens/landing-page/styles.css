@@ -1,0 +1,26 @@
+.slider {
+    width: 300px !important;
+}
+
+.card-image{
+    height: 250px;
+    width: 250px !important;
+    align-self: center;
+}
+
+.slide {
+    background: gray !important;
+}
+
+.heading {
+    margin: 0;
+    padding: 20px;
+}
+
+.control-arrow {
+    background-color: black !important;
+}
+
+.control-arrow:hover {
+    opacity: .8 !important;
+}
