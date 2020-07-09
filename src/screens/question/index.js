@@ -10,6 +10,7 @@ class Question extends PureComponent {
     }
 
     render() {
+        console.log(this.props.match.params.id)
         return (
             <div>
                 hii
