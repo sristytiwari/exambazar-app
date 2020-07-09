@@ -55,7 +55,7 @@ class LandingPage extends PureComponent {
                     <Card.Title>{item.name}</Card.Title>
                     <Card.Text>Rank - {item.rank}</Card.Text>
                     <Link to={`/question/${item._id}`}>
-                      <Button variant="primary">see example question</Button>
+                      <Button variant="primary">See Question</Button>
                     </Link>
                   </Card.Body>
                 </Card>
@@ -77,7 +77,6 @@ class LandingPage extends PureComponent {
                   <Card.Body>
                     <Card.Title>{item.name}</Card.Title>
                     <Card.Text>Rank - {item.rank}</Card.Text>
-                    <Link to={`/question/${item._id}`}>See Question</Link>
                   </Card.Body>
                 </Card>
               );
